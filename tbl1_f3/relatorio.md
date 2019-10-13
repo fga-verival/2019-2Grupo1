@@ -20,7 +20,148 @@ O walkthrough é melhor do que um processo em que o próprio programador lê seu
 
 Alguns testadores que utilizam desta técnica, concluíram que processos de teste humanos como Inspeções e Walkthroughs tendem a ser mais efetivas que testes computadorizados em encontrar certos tipos de erros, enquanto o oposto vale para outros tipos de erros. Então estas técnicas são complementares à testes realizados pelo computador.
 
-## 2.
+## 2. Pseudocódigo 
+### SpaceX
+```
+    NEXT_LAUNCH ← 1
+    LATEST_LAUNCH ← 2
+    UPCOMING_LAUNCHES ← 3
+    PAST_LAUNCHES ← 4
+
+    procedure run(cls):
+        
+        ▷ Exibe menus para o usuário
+
+        begin
+            while:
+                begin
+                    print menu
+                    scan number
+                    option ← number
+                    
+                    if inteiro:
+                        begin
+                            if option < 1 or option > 5
+                                begin
+                                    print Essa opção não existe, por favor insira uma opção válida.
+                                end
+                            if option == 5:
+                                begin
+                                    __close()
+                                end
+                            else:
+                                begin
+                                    __show_result(option)
+                                end
+                        end
+                
+                    print Deseja sair da aplicação? (S/N)
+                    scan answer 
+
+                    if answer == S
+                        begin
+                            __close()
+                        end
+                end
+
+        end
+
+    procedure __show_result(cls, option):
+      
+        ▷ Executa uma função específica
+
+        begin
+            print()
+
+            if option == SpaceX.NEXT_LAUNCH:
+                begin
+                    __next_launch()
+                end
+            elif option == SpaceX.LATEST_LAUNCH:
+                begin
+                    __latest_launch()
+                end
+            elif option == SpaceX.UPCOMING_LAUNCHES:
+                begin
+                    __upcoming_launches()
+                end
+            elif option == SpaceX.PAST_LAUNCHES:
+                begin
+                    __past_launches()
+                end
+            else:
+                begin
+                    print Opção invalida
+                end
+          end
+            
+    procedure __clean(seconds):
+        
+        ▷ Limpa o console
+
+        begin
+            sleep
+
+            if 'win' in sys.platform:
+                begin
+                    clean windows' screen
+                end
+            else:
+                begin
+                    clean another os screen
+                end
+        end
+        
+    procedure __close():
+        
+        ▷ Fecha o programa
+        begin
+            print Finalizando o programa...
+            sleep
+        end
+
+    procedure __next_launch():
+        
+        ▷ Retorna os próximos lançamentos
+        begin
+            connection ← next launch from the api
+            print connection.result
+        end
+
+    procedure __upcoming_launches():
+      
+        ▷ Exibe os próximos lançamento
+        begin
+            connection ← upcoming launch from the api
+
+            for result in connection.result:
+                begin
+                    print result
+                end
+        end
+
+
+    procedure __latest_launch():
+        
+        ▷ Exibe o ultimo lançamento
+        begin
+            connection ← latest launch from the api
+            print connection.result
+        end
+
+
+    procedure __past_launches():
+        
+        ▷ Exibe os lançamentos passados
+        begin
+            connection ← past launch from the api
+
+            for result in connection.result:
+                begin
+                    print(result)
+                end
+        end
+ ```
 
 
 ## Referências
