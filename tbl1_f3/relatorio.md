@@ -231,8 +231,60 @@ Alguns testadores que utilizam desta técnica, concluíram que processos de test
             return __response
         end
  ```
+## 3. Instância Pseudocódigo
+```
+procedure run(cls):
+        
+        ▷ Exibe menus para o usuário
+```
+O menu é exibido, digita-se o valor da opção desejada, 1 por exemplo.
+```
+        begin
+            while:
+                begin
+                    print menu
+                    scan number
+                    option ← number
+```
+A variável recebe o número digitado.
+```
+                    if inteiro:
+                        begin
+                            if option < 1 or option > 5
+                                begin
+                                    print Essa opção não existe, por favor insira uma opção válida.
+                                end
+                            if option == 5:
+                                begin
+                                    __close()
+                                end
+                            else:
+                                begin
+                                    __show_result(option)
+                                end
+                        end
+```
+Como 1 é intero e dentro do intervalo 1 e 5, a opção é selecionada.
+```
+                
+                    print Deseja sair da aplicação? (S/N)
+                    scan answer 
+```
+É verificado se deseja sair da aplicação, no caso insere-se "S"
+```
+                    if answer == S
+                        begin
+                            __close()
+                        end
+                end
 
-## 3. Evidências da Execução
+        end
+```
+A aplicação é fechada.
+
+
+## 4. Análise do Código
+## 5. Evidências da Execução
 ```
 O que você deseja visualizar?
 
