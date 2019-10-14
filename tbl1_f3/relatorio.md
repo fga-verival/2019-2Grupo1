@@ -287,16 +287,17 @@ A aplicação é fechada.
 
 Após a análise do código foi possível identificar os seguintes **problemas** e **defeitos**:
 
- - Os módulos não estão comentados. Solução: adicionar linhas de comentários aos módulos;
- - Import nunca utilizado na classe test_api_connection. Solução: remover linha de código com o import;
- - Nome dos módulos não seguem um padrão. Solução: seguir o padrão do PEP8;
- - As URLs utilizadas não estão em constantes. Solução: salvar as mesmas em constantes;
- - Falta um header de script na 'main.py'. Solução: escrever header do script;
- - Herança de objeto, prática abandonada a partir do python 3. Solução: remover herança do objeto, pois no python3 toda classe herda de objeto implicitamente;
- - O método que encerra as conexões possui um sleep desnecessário. Solução: apagar o time.sleep();
- - Falta validação nas requisições, o programa quebra na falta de internet. Solução: Criar método para tentar reconexão na falta de internet;
- - Validação de entrada quando pede para o usuário digitar 'S' ou 'N'. Solução: mudar para que sejam aceitas apenas as entradas: 'S/s' para sim ou 'N/n' para não.
-
+ - Os módulos não estão comentados. <br>**Solução:** adicionar linhas de comentários aos módulos;
+ - Import nunca utilizado na classe test_api_connection. <br>**Solução:** remover linha de código com o import;
+ - Nome dos módulos não seguem um padrão. <br>**Solução:** seguir o padrão do PEP8;
+ - As URLs utilizadas não estão em constantes. <br>**Solução:** salvar as mesmas em constantes;
+ - Falta um header de script na 'main.py'. <br>**Solução:** escrever header do script;
+ - Herança de objeto, prática abandonada a partir do python 3. <br>**Solução:** remover herança do objeto, pois no python3 toda classe herda de objeto implicitamente;
+ - O método que encerra as conexões possui um sleep desnecessário. <br>**Solução:** apagar o time.sleep();
+ - Falta validação nas requisições, o programa quebra na falta de internet. <br>**Solução:** Criar método para tentar reconexão na falta de internet;
+- O numero de linhas entre as funções deve ser de uma linha e em alguns casos isso não e respeitado como por exemplo, entre o metodo "test_to_string_launch_success" e o "test_to_string_launch_fail".
+<br>**Solução:** Tirar as linhas a mais no código.
+- Validação de entrada quando pede para o usuário digitar 'S' ou 'N' e. <br>**Solução:** mudar para que sejam aceitas apenas as entradas: 'S/s' para sim ou 'N/n' para não.
 
 
 ## 5. Evidências da Execução
@@ -1292,11 +1293,10 @@ Insira uma opção: 5
 Finalizando o programa...
 ```
 
-
-
-
 ## Referências
 
 - FERREIRA, Bruno. UMA TÉCNICA PARA VALIDAÇÃO DE PROCESSOS DE DESENVOLVIMENTO DE SOFTWARE. Belo Horizonte, p.60-61, fev. 2008.
 
 -  MYERS, Glenford J.. The Art of Software Testing. p.22-28.
+
+- VICTORDEON. API SpaceX. Disponível em: <https://github.com/VictorDeon/SpaceX-API>. Acesso em: 13 dez. 2018.
