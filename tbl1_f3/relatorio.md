@@ -284,6 +284,21 @@ A aplicação é fechada.
 
 
 ## 4. Análise do Código
+
+Após a análise do código foi possível identificar os seguintes **problemas** e **defeitos**:
+
+ - Os módulos não estão comentados. Solução: adicionar linhas de comentários aos módulos;
+ - Import nunca utilizado na classe test_api_connection. Solução: remover linha de código com o import;
+ - Nome dos módulos não seguem um padrão. Solução: seguir o padrão do PEP8;
+ - As URLs utilizadas não estão em constantes. Solução: salvar as mesmas em constantes;
+ - Falta um header de script na 'main.py'. Solução: escrever header do script;
+ - Herança de objeto, prática abandonada a partir do python 3. Solução: remover herança do objeto, pois no python3 toda classe herda de objeto implicitamente;
+ - O método que encerra as conexões possui um sleep desnecessário. Solução: apagar o time.sleep();
+ - Falta validação nas requisições, o programa quebra na falta de internet. Solução: Criar método para tentar reconexão na falta de internet;
+ - Validação de entrada quando pede para o usuário digitar 'S' ou 'N'. Solução: mudar para que sejam aceitas apenas as entradas: 'S/s' para sim ou 'N/n' para não.
+
+
+
 ## 5. Evidências da Execução
 ```
 O que você deseja visualizar?
