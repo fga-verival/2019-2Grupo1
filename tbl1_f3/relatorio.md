@@ -2,15 +2,15 @@
 
 ## Equipe
 
-| Nome | GitHub|
-|--|--|
-| André Bargas | [@andrebargas](https://github.com/andrebargas) |
-| Brian Lui | [@brian2397](https://github.com/brian2397) |
-| Gustavo Duarte Moreira |[@gustavoduartemoreira](https://github.com/gustavoduartemoreira) |
-| Lucas Machado | [@lmmLucasMachado](https://github.com/lmmLucasMachado) |
-| Mateus Oliveira | [@omateusp](https://github.com/omateusp) |
-| João de Assis| [@Jonjon667](https://github.com/Jonjon667) |
-| Tâmara Barbosa Tavares | [@tamarabarbosa](https://github.com/tamarabarbosa) |
+| Nome | GitHub| Participação |
+|:--|:--|:--:|
+| André Bargas | [@andrebargas](https://github.com/andrebargas) | 70% |
+| Brian Lui | [@brian2397](https://github.com/brian2397) | 80% |
+| Gustavo Duarte Moreira |[@gustavoduartemoreira](https://github.com/gustavoduartemoreira) | 90%|
+| Lucas Machado | [@lmmLucasMachado](https://github.com/lmmLucasMachado) | 100% |
+| Mateus Oliveira | [@omateusp](https://github.com/omateusp) | 95% |
+| João de Assis| [@Jonjon667](https://github.com/Jonjon667) | 65% |
+| Tâmara Barbosa Tavares | [@tamarabarbosa](https://github.com/tamarabarbosa) | 100%|
 
 ## 1. Walkthrough
 
@@ -284,22 +284,6 @@ A aplicação é fechada.
 
 
 ## 4. Análise do Código
-
-Após a análise do código foi possível identificar os seguintes **problemas** e **defeitos**:
-
- - Os módulos não estão comentados. <br>**Solução:** adicionar linhas de comentários aos módulos;
- - Import nunca utilizado na classe test_api_connection. <br>**Solução:** remover linha de código com o import;
- - Nome dos módulos não seguem um padrão. <br>**Solução:** seguir o padrão do PEP8;
- - As URLs utilizadas não estão em constantes. <br>**Solução:** salvar as mesmas em constantes;
- - Falta um header de script na 'main.py'. <br>**Solução:** escrever header do script;
- - Herança de objeto, prática abandonada a partir do python 3. <br>**Solução:** remover herança do objeto, pois no python3 toda classe herda de objeto implicitamente;
- - O método que encerra as conexões possui um sleep desnecessário. <br>**Solução:** apagar o time.sleep();
- - Falta validação nas requisições, o programa quebra na falta de internet. <br>**Solução:** Criar método para tentar reconexão na falta de internet;
-- O numero de linhas entre as funções deve ser de uma linha e em alguns casos isso não e respeitado como por exemplo, entre o metodo "test_to_string_launch_success" e o "test_to_string_launch_fail".
-<br>**Solução:** Tirar as linhas a mais no código.
-- Validação de entrada quando pede para o usuário digitar 'S' ou 'N' e. <br>**Solução:** mudar para que sejam aceitas apenas as entradas: 'S/s' para sim ou 'N/n' para não.
-
-
 ## 5. Evidências da Execução
 ```
 O que você deseja visualizar?
@@ -1293,10 +1277,22 @@ Insira uma opção: 5
 Finalizando o programa...
 ```
 
+
+![Execução](img/Evidencia.png)
+
+![Próximo_Lancamento](img/Prox_lanc.png)
+
+![Próximos_Lancamentos](img/Prox_lancamentos.png)
+
+![Execução](img/sair_prog.png)
+
+
+
+
+
+
 ## Referências
 
 - FERREIRA, Bruno. UMA TÉCNICA PARA VALIDAÇÃO DE PROCESSOS DE DESENVOLVIMENTO DE SOFTWARE. Belo Horizonte, p.60-61, fev. 2008.
 
 -  MYERS, Glenford J.. The Art of Software Testing. p.22-28.
-
-- VICTORDEON. API SpaceX. Disponível em: <https://github.com/VictorDeon/SpaceX-API>. Acesso em: 13 dez. 2018.
