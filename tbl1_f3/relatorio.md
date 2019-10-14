@@ -1278,17 +1278,6 @@ Finalizando o programa...
 ```
 
 
-![Execução](img/Evidencia.png)
-
-![Próximo_Lancamento](img/Prox_lanc.png)
-
-![Próximos_Lancamentos](img/Prox_lancamentos.png)
-
-![Execução](img/sair_prog.png)
-
-
-
-
 
 
 ## Referências
