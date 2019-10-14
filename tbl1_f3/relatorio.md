@@ -162,6 +162,75 @@ Alguns testadores que utilizam desta técnica, concluíram que processos de test
                 end
         end
  ```
+ 
+ ### Connect(object)
+ ```
+ ▷ Conecta na api
+    
+
+    procedure __init__(self, url, headers←None, params←None):
+        
+        ▷ Connection constructor
+        begin
+            if headers:
+                begin
+                    self.__headers ← headers
+                end
+            else:
+                begin
+                    self.__headers ← {'Accept': 'application/json'}
+                end
+            try:
+                begin
+                    __response ← requests from params
+                end
+        end
+
+    procedure result(self):
+
+        ▷ Obter JSON resultado da requisição
+
+        begin
+            if type(__result) == dict:
+                begin
+                    return Launch(
+                        flight_number←__result.get('flight_number'),
+                        mission_name←__result.get('mission_name'),
+                        rocket←__result.get('rocket').get('rocket_name'),
+                        rocket_type←__result.get('rocket').get('rocket_type'),
+                        launch_success←__result.get('launch_success'),
+                        launch_date←__result.get('launch_date_utc'),
+                        launch_year←__result.get('launch_year')
+                    )
+                end
+
+            launchs ← None
+            
+            for result in __result:
+                begin
+                    launchs.append(
+                        Launch(
+                            flight_number←result.get('flight_number'),
+                            mission_name←result.get('mission_name'),
+                            rocket←result.get('rocket').get('rocket_name'),
+                            rocket_type←result.get('rocket').get('rocket_type'),
+                            launch_success←result.get('launch_success'),
+                            launch_date←result.get('launch_date_utc'),
+                            launch_year←result.get('launch_year')
+                        )
+                    )
+                end
+
+            return launchs
+        end
+
+    procedure response(self):
+        ▷ Obter resposta da requisição
+
+        begin
+            return __response
+        end
+ ```
 
 ## 3. Evidências da Execução
 ```
