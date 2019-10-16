@@ -54,3 +54,4 @@ Teste em diferentes Browser
 
 ### Resultados:
 
+![Resultados](https://imgur.com/qttjN7I)
