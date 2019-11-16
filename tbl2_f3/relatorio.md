@@ -2,15 +2,14 @@
 
 ## Equipe
 
-| Nome                   | GitHub                                                           | Participação |
-| :--------------------- | :--------------------------------------------------------------- | :----------: |
-| André Bargas           | [@andrebargas](https://github.com/andrebargas)                   |     100%     |
-| Brian Lui              | [@brian2397](https://github.com/brian2397)                       |     100%     |
-| Gustavo Duarte Moreira | [@gustavoduartemoreira](https://github.com/gustavoduartemoreira) |     100%     |
-| Lucas Machado          | [@lmmLucasMachado](https://github.com/lmmLucasMachado)           |     100%     |
-| Mateus Oliveira        | [@omateusp](https://github.com/omateusp)                         |     100%     |
-| João de Assis          | [@Jonjon667](https://github.com/Jonjon667)                       |     100%     |
-| Tâmara Barbosa Tavares | [@tamarabarbosa](https://github.com/tamarabarbosa)               |     100%     |
+| Nome                   | GitHub                                                 | Participação |
+| :--------------------- | :----------------------------------------------------- | :----------: |
+| André Bargas           | [@andrebargas](https://github.com/andrebargas)         |     100%     |
+| Brian Lui              | [@brian2397](https://github.com/brian2397)             |     100%     |
+| Lucas Machado          | [@lmmLucasMachado](https://github.com/lmmLucasMachado) |     100%     |
+| Mateus Oliveira        | [@omateusp](https://github.com/omateusp)               |     100%     |
+| João de Assis          | [@Jonjon667](https://github.com/Jonjon667)             |     100%     |
+| Tâmara Barbosa Tavares | [@tamarabarbosa](https://github.com/tamarabarbosa)     |     100%     |
 
 ## 1 Técnicas utilizadas
 
